@@ -50,7 +50,7 @@ cp .env.example .env
 ```shell
 # on native environment
 php artisan migrate
-
+```
 7. Run build file css and js
 
 ```shell
