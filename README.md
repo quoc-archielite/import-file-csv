@@ -45,8 +45,14 @@ cp .env.example .env
 
 > TIP: you can set `sail` is alias of `./vendor/bin/sail` in `~/.zshrc` or `~/.bash_profile`.
 
-5. Run database migrations and database seeding.
+6. Run database migrations and database seeding.
 
 ```shell
 # on native environment
 php artisan migrate
+
+7. Run build file css and js
+
+```shell
+npm run dev
+```
