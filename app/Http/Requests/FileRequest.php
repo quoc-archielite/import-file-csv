@@ -13,7 +13,7 @@ class FileRequest extends FormRequest
                 'required',
                 'file',
                 'mimes:csv',
-                'max:51200',
+                'max:100000',
             ],
         ];
     }
