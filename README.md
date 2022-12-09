@@ -1,11 +1,11 @@
-## Repaire development environment
+## Require
+
+PHP 8.1 or later
+MySQL 8.0 or later
 
 ## Setup
 
 1. Composer install dependencies
-
-PHP 8.1 or later
-MySQL 8.0 or later
 
 If use native environment:
 
@@ -52,6 +52,10 @@ cp .env.example .env
 php artisan migrate
 ```
 7. Run build file css and js
+
+```shell
+npm install
+```
 
 ```shell
 npm run dev
