@@ -22,9 +22,11 @@
 <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", (event) => {
-        console.log('loadxong')
+        $(".btn-upload").removeClass('hidden');
+        $(".btn-loading").addClass('hidden');
     });
 </script>
 @yield('scripts')
+@include('layouts.footer')
 </body>
 </html>
