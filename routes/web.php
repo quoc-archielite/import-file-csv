@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('customer.index');
 });
+
+Route::resource('customer', CustomerController::class);
+Route::get('truncate-customer', [CustomerController::class, 'truncate'])->name('truncate');
+Route::get('log-import-customer', [CustomerController::class, 'logImport'])->name('log-import');
+Route::get('delete/{id}', [CustomerController::class, 'deleteLog'])->name('delete');
