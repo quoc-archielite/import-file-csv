@@ -114,7 +114,7 @@
                 @endforelse
                 </tbody>
             </table>
-            <div class="mb-5">
+            <div class="mt-3">
                 {{ $customers->links() }}
             </div>
         </div>
